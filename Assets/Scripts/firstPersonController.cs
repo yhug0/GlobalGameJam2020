@@ -26,11 +26,14 @@ public class firstPersonController : MonoBehaviour
 
     [SerializeField] [Header("Min Y value loocked")] private float MinLoocked = -90f;
     [SerializeField] [Header("Max Y value loocked")] private float MaxLoocked = -90f;
+    [SerializeField] [Header("Max velocyty change")] private float maxVelocityChange = 10.0f;
+
 
     private float HorizontalAxe = 0.0F;
     private float VerticalAxe = 0.0F;
 
     private Vector2 MouseMovement = default(Vector2);
+
 
     private Rigidbody RigidbodyCorps = null;
 
@@ -49,7 +52,13 @@ public class firstPersonController : MonoBehaviour
     {
         HorizontalAxe = Input.GetAxis(HorizontalInput);
         VerticalAxe = Input.GetAxis(VerticalInput);
-        RigidbodyCorps.MovePosition(transform.position + (PLayerMovement() * speed * Time.deltaTime));
+
+        var velocity = RigidbodyCorps.velocity;
+		var velocityChange = ((PLayerMovement() * speed * Time.deltaTime) - velocity);
+        velocityChange.x = Mathf.Clamp(velocityChange.x, -maxVelocityChange, maxVelocityChange);
+		velocityChange.z = Mathf.Clamp(velocityChange.z, -maxVelocityChange, maxVelocityChange);
+		velocityChange.y = 0;
+        RigidbodyCorps.AddForce(velocityChange, ForceMode.VelocityChange);
         HeadBobbing();
         RotatePLayer();
     }
