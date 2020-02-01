@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32d159942897b540b3458cbc9ecd581, type: 3}
+  m_Name: VoxelSettings
+  m_EditorClassIdentifier: 
+  MaxTypeOfVoxel: 255
+  RenderRules:
+  - material: {fileID: 2100000, guid: 5aa252468ac64a3418aedb2a38d7a626, type: 2}
+    Min: 0
+    Max: 90.448715
+    Transparent: 0
+    NeighbourTransparentFaced: 1
+    NeighbourOpaqueFaced: 0
+    RenctangleSize: 1
+    NbOfRectByLine: 0
+  - material: {fileID: 2100000, guid: c9d0f0626eb284842aa2d59c5d07ffee, type: 2}
+    Min: 91.448715
+    Max: 97.040215
+    Transparent: 0
+    NeighbourTransparentFaced: 1
+    NeighbourOpaqueFaced: 0
+    RenctangleSize: 1
+    NbOfRectByLine: 0
+  - material: {fileID: 2100000, guid: 3841c0a5e5c19df47a2e900981f06e0e, type: 2}
+    Min: 97.040215
+    Max: 255
+    Transparent: 0
+    NeighbourTransparentFaced: 1
+    NeighbourOpaqueFaced: 0
+    RenctangleSize: 1
+    NbOfRectByLine: 0
