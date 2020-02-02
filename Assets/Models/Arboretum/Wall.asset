@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32d159942897b540b3458cbc9ecd581, type: 3}
+  m_Name: Wall
+  m_EditorClassIdentifier: 
+  MaxTypeOfVoxel: 255
+  RenderRules:
+  - material: {fileID: 2100000, guid: a7c3b64e8f2e5624089da332be1acbbb, type: 2}
+    Min: 0
+    Max: 38.141018
+    Transparent: 0
+    NeighbourTransparentFaced: 1
+    NeighbourOpaqueFaced: 0
+    RenctangleSize: 1
+    NbOfRectByLine: 0
+  - material: {fileID: 2100000, guid: dbde8f115611e1a448fbcc5b96b3e3ae, type: 2}
+    Min: 39.141018
+    Max: 94.48947
+    Transparent: 0
+    NeighbourTransparentFaced: 1
+    NeighbourOpaqueFaced: 0
+    RenctangleSize: 1
+    NbOfRectByLine: 0
+  - material: {fileID: 2100000, guid: 2895a8f2b46124241a69e7f9e6bffb73, type: 2}
+    Min: 94.48947
+    Max: 255
+    Transparent: 0
+    NeighbourTransparentFaced: 1
+    NeighbourOpaqueFaced: 0
+    RenctangleSize: 1
+    NbOfRectByLine: 0
