@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6ec24cf6a5084784b80e69695d57291a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: f67082239dedf784e9da9c12c8995e57, type: 3}
+  gameObject: {fileID: -9050478647442459596, guid: 6ec24cf6a5084784b80e69695d57291a,
+    type: 3}
+  FactorSize: 2
+  ImportedSetting: {fileID: 11400000, guid: bf5befbdc41abce498658569f4484fcb, type: 2}
+  ChunkOptimized: 1
+  GenerateCollider: 1
