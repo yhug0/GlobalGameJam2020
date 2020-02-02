@@ -13,4 +13,4 @@ ScriptedImporter:
   FactorSize: 2
   ImportedSetting: {fileID: 11400000, guid: c24fe129dc12be74a8fbc3e16b20ce9e, type: 2}
   ChunkOptimized: 1
-  GenerateCollider: 0
+  GenerateCollider: 1

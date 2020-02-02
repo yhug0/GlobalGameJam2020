@@ -30,7 +30,7 @@ MonoBehaviour:
     NeighbourOpaqueFaced: 0
     RenctangleSize: 1
     NbOfRectByLine: 0
-  - material: {fileID: 0}
+  - material: {fileID: 2100000, guid: 21707c8dc8b4a1040b11270f079d4bc4, type: 2}
     Min: 139.87994
     Max: 255
     Transparent: 0
